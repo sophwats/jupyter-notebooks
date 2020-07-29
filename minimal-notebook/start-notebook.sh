@@ -31,7 +31,7 @@ if ! [[ "$JUPYTER_ENABLE_LAB" =~ ^(true|yes|y|1)$ ]]; then
     fi
 fi
 
-JUPYTER_PROGRAM_ARGS="$JUPYTER_PROGRAM_ARGS --config=/opt/app-root/etc/jupyter_notebook_config.py"
+JUPYTER_PROGRAM_ARGS="$JUPYTER_PROGRAM_ARGS --config=/opt/app-root/jupyter-notebooks-master/minimal-notebooks/jupyter_notebook_config.py"
 
 #exec /opt/app-root/bin/start.sh jupyter notebook $JUPYTER_PROGRAM_ARGS "$@"
 exec /opt/app-root/jupyter-notebooks-master/minimal-notebook/start.sh jupyter notebook $JUPYTER_PROGRAM_ARGS "$@"
